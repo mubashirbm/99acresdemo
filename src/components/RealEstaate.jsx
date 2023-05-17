@@ -8,8 +8,7 @@ export default function RealEstaate() {
 
 
    
-    let images=["https://static.99acres.com/universalhp/img/d_hp_ppf.webp","https://static.99acres.com/universalhp/img/d_hp_ppf.webp","https://static.99acres.com/universalhp/img/d_hp_ppf.webp","https://static.99acres.com/universalhp/img/d_hp_plot_land.webp","https://static.99acres.com/universalhp/img/ei.webp","https://static.99acres.com/universalhp/img/ei.webp","https://static.99acres.com/universalhp/img/d_hp_com_buy.webp","https://static.99acres.com/universalhp/img/d_hp_com_lease.webp"]
-  let no=[1,2,3,4,5,6,7]
+    let images=[{img:"https://static.99acres.com/universalhp/img/d_hp_buy.webp",text:"Buying a home"},{img:"https://static.99acres.com/universalhp/img/d_hp_rent.webp",text:"Renting a home"},{img:"https://static.99acres.com/universalhp/img/d_hp_ppf.webp",text:"Sell / Rent your property"},{img:"https://static.99acres.com/universalhp/img/d_hp_plot_land.webp",text:"Plot/Land"},{img:"https://static.99acres.com/universalhp/img/ei.webp",text:"Explore Insights"},{img:"https://static.99acres.com/universalhp/img/d_hp_pg.webp",text:"PG & co-living"},{img:"https://static.99acres.com/universalhp/img/d_hp_com_buy.webp",text:"Buy comercial spaces"},{img:"https://static.99acres.com/universalhp/img/d_hp_com_lease.webp",text:"Lease comercial spaces"}]
     return (
     <>
 
@@ -46,23 +45,20 @@ export default function RealEstaate() {
                     />
                   </svg>
                 </ButtonBack>
-                        <div className="w-full h-full mx-auto  p-2 overflow-x-hidden overflow-y-hidden">
+                        <div className="w-full mt-2 h-full mx-auto  p-2 overflow-x-hidden overflow-y-hidden">
                             <Slider>
                                 <div id="slider" className="h-40 flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                    
-                                    <Slide index={1}>
-                                        <div className="flex  gap-4 flex-shrink-0 relative  sm:w-auto">
                                             {images.map((img)=>(
 <>
-                                            <img src={img} alt="sitting area" className="h-28 cursor-pointer object-cover object-center hover:scale-105 ease-in duration-300 " />
-                                            
-</>
-                                            ))}
-
-                                        
-                                            
+                                    <Slide index={1}>
+                                        <div className="flex  gap-4 flex-shrink-0 relative  sm:w-auto">
+                                            <img src={img.img} alt="sitting area" className="h-28 cursor-pointer object-cover object-center hover:scale-105 ease-in duration-300 " />
                                         </div>
-                                    </Slide>
+                                        <h3 className="ml-1 mt-2 text-sm font-medium text-gray-500">{img.text}</h3>
+                                            </Slide>
+                                            </>
+                                            ))}
                                     
                                     
                                     
