@@ -1,0 +1,8 @@
+[build]
+  command = "CI=1 npm run build" # Set the build command to include CI=1
+
+[context.production.environment]
+  CI = "true" # Set the CI environment variable to true for the production context
+
+[context.deploy-preview.environment]
+  CI = "true" # Set the CI environment variable to true for deploy previews
