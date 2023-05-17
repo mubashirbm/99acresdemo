@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/99acresdemo/static/css/main.e9e10885.css",
+    "main.js": "/99acresdemo/static/js/main.a9eed6ef.js",
+    "static/js/787.f932211b.chunk.js": "/99acresdemo/static/js/787.f932211b.chunk.js",
+    "index.html": "/99acresdemo/index.html",
+    "main.e9e10885.css.map": "/99acresdemo/static/css/main.e9e10885.css.map",
+    "main.a9eed6ef.js.map": "/99acresdemo/static/js/main.a9eed6ef.js.map",
+    "787.f932211b.chunk.js.map": "/99acresdemo/static/js/787.f932211b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9e10885.css",
+    "static/js/main.a9eed6ef.js"
+  ]
+}
